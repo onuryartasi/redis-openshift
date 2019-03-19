@@ -12,8 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-FROM rhel7
 
+FROM centos:centos7
 RUN yum install epel-release -y
 
 RUN yum install redis hostname -y ; yum clean all
